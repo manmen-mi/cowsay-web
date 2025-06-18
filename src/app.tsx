@@ -9,7 +9,7 @@ export function App() {
 
   async function submit(ev: SubmitEvent) {
     ev.preventDefault()
-    const response = await ky(`https://dash.deno.com/playground/cow-say-99?say=${message}`).text()
+    const response = await ky(`https://api.cow-say.xyz/?say=${message}`).text()
     setSaid(response)
   }
 
