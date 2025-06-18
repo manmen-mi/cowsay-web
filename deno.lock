@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "npm:@preact/preset-vite@^2.10.1": "2.10.1_@babel+core@7.27.4_vite@6.3.5__picomatch@4.0.2_preact@10.26.9",
+    "npm:ky@^1.8.1": "1.8.1",
     "npm:preact@^10.26.5": "10.26.9",
     "npm:typescript@~5.8.3": "5.8.3",
     "npm:vite@^6.3.5": "6.3.5_picomatch@4.0.2"
@@ -614,6 +615,9 @@
     "kolorist@1.8.0": {
       "integrity": "sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ=="
     },
+    "ky@1.8.1": {
+      "integrity": "sha512-7Bp3TpsE+L+TARSnnDpk3xg8Idi8RwSLdj6CMbNWoOARIrGrbuLGusV0dYwbZOm4bB3jHNxSw8Wk/ByDqJEnDw=="
+    },
     "lru-cache@5.1.1": {
       "integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
       "dependencies": [
@@ -773,6 +777,7 @@
     "packageJson": {
       "dependencies": [
         "npm:@preact/preset-vite@^2.10.1",
+        "npm:ky@^1.8.1",
         "npm:preact@^10.26.5",
         "npm:typescript@~5.8.3",
         "npm:vite@^6.3.5"
