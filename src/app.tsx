@@ -7,7 +7,7 @@ export function App() {
   const [said, setSaid] = useState('')
 
 
-  async function submit(ev) {
+  async function submit(ev: SubmitEvent) {
     ev.preventDefault()
     const response = await ky(`https://dash.deno.com/playground/cow-say-99?say=${message}`).text()
     setSaid(response)
@@ -19,7 +19,7 @@ export function App() {
         <textarea name="say" value={message} onInput={ev => setMessage(ev.currentTarget.value)}></textarea>
         <button type="submit">SAY</button>
         <hr />
-        <textarea name="said" value={said} readonly></textarea>
+        <textarea name="said" value={said} readOnly></textarea>
       </form>
     </>
   )
