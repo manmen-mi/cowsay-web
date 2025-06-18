@@ -13,7 +13,7 @@ export function App() {
       return
     }
 
-    const response = await ky(`https://api.cow-say.xyz/?say=${message}`).text()
+    const response = await ky.post(`https://api.cow-say.xyz`, { json: { message } }).text()
     setSaid(response)
   }
 
