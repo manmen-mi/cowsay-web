@@ -19,4 +19,18 @@ form {
 
 hr {
   width: 100%;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  border: none;
+  border-bottom: 1px dashed;
+
+  &::after {
+    content: '↓↓↓';
+    font-size: large;
+    background: #fff;
+    position: relative;
+    top: -10px;
+  }
 }
